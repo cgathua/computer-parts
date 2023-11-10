@@ -49,4 +49,68 @@ img {
     display: block;
 }
 
+a {
+    color: var(--secondary-color);
+    transition: var(--transition);
+}
+
+a:hover {
+    color: var(--tertiary-color);
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: var(--secondary-color);
+}
+
+
+section {
+    padding: 4.5rem 0;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+#navbar2,
+#menu-btn {
+    display: none;
+}
+
 /* end of general styling */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    width: 100%;
+    background-color: var(--primary-color);
+}
+
+#navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-right: 1rem;
+}
+
+nav,
+svg {
+    cursor: pointer;
+}
+
+.logo {
+    font-size: 1.5rem;
+    margin-left: 1rem;
+}
+
+/* end of header styling */
