@@ -77,7 +77,7 @@ section {
 }
 
 section h2 {
-    text-align: center;
+    text-align: left;
     margin-bottom: 4rem;
     font-weight: lighter;
 }
@@ -149,3 +149,16 @@ section[id="home"] .container {
 .HomeArticle img {
     aspect-ratio: 16/9;
 }
+
+.Benefits {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(min-content, 1fr));
+}
+
+.BenefitsArticle {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+
