@@ -20,7 +20,19 @@
 <body>
     <main>
         <header>
-            <a href="#home" class="logo">LOGO</a>
+            <a href="#home" class="logo" aria-label="home" alt="computer logo">
+                <svg width="36px" height="36px" viewBox="0 0 24 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M2 6C2 4.34315 3.34315 3 5 3H19C20.6569 3 22 4.34315 22 6V15C22 16.6569 20.6569 18 19 18H13V19H15C15.5523 19 16 19.4477 16 20C16 20.5523 15.5523 21 15 21H9C8.44772 21 8 20.5523 8 20C8 19.4477 8.44772 19 9 19H11V18H5C3.34315 18 2 16.6569 2 15V6ZM5 5C4.44772 5 4 5.44772 4 6V15C4 15.5523 4.44772 16 5 16H19C19.5523 16 20 15.5523 20 15V6C20 5.44772 19.5523 5 19 5H5Z"
+                            fill="currentColor">
+                        </path>
+                    </g>
+                </svg>
+            </a>
             <nav>
                 <ul id="navbar">
                     <li><a href="#home">Home</a></li>
@@ -29,23 +41,25 @@
                     <li><a href="#reviews">Reviews</a></li>
                     <li><a href="#faq">FAQs</a></li>
                     <li><a href="#contact">Contact</a></li>
-                    <svg width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
-                        aria-labelledby="nightModeIconTitle" stroke="currentColor" stroke-width="1"
-                        stroke-linecap="square" stroke-linejoin="miter" fill="none" color="#000000">
-                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                        <g id="SVGRepo_iconCarrier">
-                            <title id="nightModeIconTitle">Night Mode</title>
-                            <path d="M12 19a7 7 0 1 0 0-14 7 7 0 0 0 0 14z"></path>
-                            <path
-                                d="M15.899 12.899a4 4 0 0 1-4.797-4.797A4.002 4.002 0 0 0 12 16c1.9 0 3.49-1.325 3.899-3.101z">
-                            </path>
-                            <path d="M12 5V3M12 21v-2"></path>
-                            <path
-                                d="M5 12H2h3zM22 12h-3 3zM16.95 7.05L19.07 4.93 16.95 7.05zM4.929 19.071L7.05 16.95 4.93 19.07zM16.95 16.95l2.121 2.121-2.121-2.121zM4.929 4.929L7.05 7.05 4.93 4.93z">
-                            </path>
-                        </g>
-                    </svg>
+                    <li>
+                        <svg width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                            aria-labelledby="nightModeIconTitle" stroke="currentColor" stroke-width="1"
+                            stroke-linecap="square" stroke-linejoin="miter" fill="none" color="#000000">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <title id="nightModeIconTitle">Night Mode</title>
+                                <path d="M12 19a7 7 0 1 0 0-14 7 7 0 0 0 0 14z"></path>
+                                <path
+                                    d="M15.899 12.899a4 4 0 0 1-4.797-4.797A4.002 4.002 0 0 0 12 16c1.9 0 3.49-1.325 3.899-3.101z">
+                                </path>
+                                <path d="M12 5V3M12 21v-2"></path>
+                                <path
+                                    d="M5 12H2h3zM22 12h-3 3zM16.95 7.05L19.07 4.93 16.95 7.05zM4.929 19.071L7.05 16.95 4.93 19.07zM16.95 16.95l2.121 2.121-2.121-2.121zM4.929 4.929L7.05 7.05 4.93 4.93z">
+                                </path>
+                            </g>
+                        </svg>
+                    </li>
                 </ul>
                 <!--END OF DESKTOP NAV-->
                 <ul id="navbar2">
@@ -69,6 +83,28 @@
             </nav>
         </header>
         <!--END OF HEADER-->
+        <section id="home">
+            <figure class="container">
+                <article class="HomeArticle">
+                    <h1>Computer Parts Store</h1>
+                    <p>We sell computer parts and accessories, in-store at our Kennesaw Location. The goal is to provide
+                        you, with a great shopping experience.
+                    </p>
+                    <p>Our helpful sales associates will guide you, in your decision making and offer technical support.
+                    </p>
+                    <button class="btn">
+                        <a href="#products" aria-label="see products">see products</a>
+                    </button>
+                </article>
+                <img 
+                    src="./imgs/pexels-andrey-matveev-1280w.jpg" 
+                    alt="amd cpu"
+                    srcset="imgs/pexels-andrey-matveev-640w.webp 640w, imgs/pexels-andrey-matveev-960w.webp 960w, imgs/pexels-andrey-matveev-1280w.webp 1280w, imgs/pexels-andrey-matveev-1280w.jpg 1280w"
+                    width="1280" height="960"
+                >
+            </figure>
+        </section>
+        <!--END OF HOME SECTION-->
 
     </main>
 </body>

@@ -58,10 +58,16 @@ a:hover {
     color: var(--tertiary-color);
 }
 
+h1 {
+    font-size: clamp(1.5rem, 2.5vw, 2.25rem);
+    font-weight: lighter;
+}
+
 h1,
 h2,
 h3,
-h4 {
+h4,
+p {
     color: var(--secondary-color);
 }
 
@@ -73,11 +79,28 @@ section {
 section h2 {
     text-align: center;
     margin-bottom: 4rem;
+    font-weight: lighter;
 }
 
 #navbar2,
 #menu-btn {
     display: none;
+}
+
+.btn {
+    padding: 5px 20px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+    cursor: pointer;
+    transition: var(--transition);
+    margin: 1rem auto;
+    font-size: 1rem;
+}
+
+.btn:hover {
+    background-color: transparent;
+    color: var(--secondary-color);
 }
 
 /* end of general styling */
@@ -103,14 +126,26 @@ header {
     margin-right: 1rem;
 }
 
-nav,
-svg {
+
+nav svg {
     cursor: pointer;
+    display: flex;
+    align-self: center;
 }
 
 .logo {
-    font-size: 1.5rem;
     margin-left: 1rem;
+    display: flex;
 }
 
 /* end of header styling */
+
+section[id="home"] .container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(min-content, 1fr));
+    place-items: center end;
+}
+
+.HomeArticle img {
+    aspect-ratio: 16/9;
+}
