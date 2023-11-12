@@ -21,7 +21,8 @@
     <main>
         <header>
             <a href="#home" class="logo" aria-label="home" alt="computer logo">
-                <svg aria-label="logo"  width="36px" height="36px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg aria-label="logo" width="36px" height="36px" viewBox="0 0 24 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
                     <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                     <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
                     <g id="SVGRepo_iconCarrier">
@@ -95,7 +96,9 @@
                         <a href="#products" aria-label="see products">See Products</a>
                     </button>
                 </article>
-                <img src="./imgs/pexels-andrey-matveev-1280w.jpg" 
+                <img 
+                    fetchpriority="high"
+                    src="./imgs/pexels-andrey-matveev-1280w.jpg" 
                     alt="amd cpu"
                     srcset="imgs/pexels-andrey-matveev-640w.webp 640w, imgs/pexels-andrey-matveev-960w.webp 960w, imgs/pexels-andrey-matveev-1280w.webp 1280w, imgs/pexels-andrey-matveev-1280w.jpg 1280w"
                     width="1280" 
@@ -107,9 +110,9 @@
         <figure class="container Benefits">
             <article class="BenefitsArticle">
                 <figure>
-                    <svg aria-label="truck" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="feather feather-truck">
+                    <svg aria-label="truck" xmlns="http://www.w3.org/2000/svg" width="36" height="36"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" class="feather feather-truck">
                         <rect x="1" y="3" width="15" height="13"></rect>
                         <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
                         <circle cx="5.5" cy="18.5" r="2.5"></circle>
@@ -124,9 +127,9 @@
 
             <article class="BenefitsArticle">
                 <figure>
-                    <svg aria-label="box" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="feather feather-package">
+                    <svg aria-label="box" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" class="feather feather-package">
                         <line x1="16.5" y1="9.4" x2="7.5" y2="4.21"></line>
                         <path
                             d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z">
@@ -143,7 +146,8 @@
 
             <article class="BenefitsArticle">
                 <figure>
-                    <svg aria-label="money" width="36px" height="36px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg aria-label="money" width="36px" height="36px" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
                         <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                         <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
                         <g id="SVGRepo_iconCarrier">
@@ -162,6 +166,62 @@
                 </figcaption>
             </article>
         </figure>
+        <!--END OF BENEFITS ARTICLE-->
+        <section id="products">
+            <h2>Products</h2>
+            <figure class="container">
+                <article class="ProductsArticle">
+                    <picture>
+                        <source srcset="./imgs/pexels-andrey-matveev-5206323.avif" type="image/avif">
+                        <img src="./imgs/pexels-andrey-matveev-5206323.jpg" width="640" height="427" alt="amd cpu"
+                            loading="lazy"
+                        >
+                    </picture>
+                    <h3 class="TextOverlay">AMD Cpus & Thermal Paste</h3>
+                </article>
+
+                <article class="ProductsArticle">
+                    <picture>
+                        <source srcset="./imgs/pexels-athena-2582932.avif" type="image/avif">
+                        <img src="./imgs/pexels-athena-2582932.jpg" width="640" height="427" alt="motherboard" loading="lazy">
+                    </picture>
+                    <h3 class="TextOverlay">Motherboards</h3>
+                </article>
+
+                <article class="ProductsArticle">
+                    <picture>
+                        <source srcset="./imgs/pexels-format-1029757.avif" type="image/avif">
+                        <img src="./imgs/pexels-format-1029757.jpg" width="640" height="427" alt="imac" loading="lazy">
+                    </picture>
+                    <h3 class="TextOverlay">iMac & Monitors</h3>
+                </article>
+
+                <article class="ProductsArticle">
+                    <picture>
+                        <source srcset="./imgs/pexels-josh-sorenson-1714205.avif" type="image/avif">
+                        <img src="./imgs/pexels-josh-sorenson-1714205.jpg" width="640" height="427" alt="keyboard" loading="lazy">
+                    </picture>
+                    <h3 class="TextOverlay">Keyboards</h3>
+                </article>
+
+                <article class="ProductsArticle">
+                    <picture>
+                        <source srcset="./imgs/pexels-andrey-matveev-15860738.avif" type="image/avif">
+                        <img src="./imgs/pexels-andrey-matveev-15860738.jpg" width="640" height="427" alt="amd cpu" loading="lazy">
+                    </picture>
+                    <h3 class="TextOverlay">Cpu Cooler</h3>
+                </article>
+
+                <article class="ProductsArticle">
+                    <picture>
+                        <source srcset="./imgs/pexels-nana-dua-4581902.avif" type="image/avif">
+                        <img src="./imgs/pexels-nana-dua-4581902.jpg" width="640" height="427" alt="nvidia gpus" loading="lazy">
+                    </picture>
+                    <h3 class="TextOverlay">Nvidia Gpus</h3>
+                </article>
+                <!--END OF PRODUCTS SECTION-->
+            </figure>
+        </section>
 
     </main>
 </body>

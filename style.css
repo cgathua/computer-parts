@@ -78,8 +78,9 @@ section {
 
 section h2 {
     text-align: left;
-    margin-bottom: 4rem;
     font-weight: lighter;
+    width: var(--desktop-container);
+    margin: 0 auto 4rem;
 }
 
 #navbar2,
@@ -113,7 +114,7 @@ header {
     top: 0;
     left: 0;
     right: 0;
-    z-index: 999;
+    z-index: 9;
     width: 100%;
     background-color: var(--primary-color);
 }
@@ -161,4 +162,30 @@ section[id="home"] .container {
     gap: 1rem;
 }
 
+/* end of home styling */
 
+section[id="products"] .container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(min-content, 1fr));
+    gap: 2rem;
+}
+
+.ProductsArticle img {
+    aspect-ratio: 16/9;
+}
+
+.ProductsArticle {
+    position: relative;
+}
+
+.TextOverlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 1rem;
+    padding: 0 0.5rem;
+    color: var(--primary-color);
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.57));
+}
+
+/* end of products styling */
