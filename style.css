@@ -189,3 +189,12 @@ section[id="products"] .container {
 }
 
 /* end of products styling */
+
+.Chart {
+    position: relative;
+    margin: auto;
+    height: 60vh;
+    width: 60vw;
+}
+
+/* end of benchmarks styling */
