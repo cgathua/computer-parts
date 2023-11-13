@@ -198,3 +198,47 @@ section[id="products"] .container {
 }
 
 /* end of benchmarks styling */
+
+.ReviewsContainer {
+    overflow-x: hidden;
+    position: relative;
+    margin-bottom: 5rem;
+    line-height: 1.1;
+}
+
+.ReviewArticle {
+    padding-top: 2rem;
+    text-align: center;
+}
+
+.Avatar {
+    width: 6rem;
+    border-radius: 50%;
+    border: 2px solid var(--secondary-color);
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+}
+
+.Image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.Review p {
+    color: var(--primary-color);
+    text-align: left;
+}
+
+.Review {
+    background-color: var(--secondary-color);
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+.mySwiper .swiper-pagination-bullet {
+    background-color: var(--secondary-color);
+}
+
+/* end of reviews styling */
