@@ -1,3 +1,5 @@
+"use strict";
+
 const ctx = document.getElementById('myChart');
 
 new Chart(ctx, {
@@ -24,6 +26,7 @@ new Chart(ctx, {
         }
     }
 });
+
 // end of chart js
 
 let swiper = new Swiper(".mySwiper", {
@@ -40,3 +43,20 @@ let swiper = new Swiper(".mySwiper", {
         }
     }
 });
+
+// end of swiper js
+
+const accordions = document.querySelectorAll('.Accordion');
+
+accordions.forEach((accordion) => {
+    accordion.addEventListener('click', () => {
+        if(!accordion.classList.contains('active')){
+            accordions.forEach(accordion => {
+                accordion.classList.remove('active');
+            })
+        };
+        accordion.classList.toggle('active');
+    });
+});
+
+// end of faq js

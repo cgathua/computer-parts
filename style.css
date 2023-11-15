@@ -242,3 +242,47 @@ section[id="products"] .container {
 }
 
 /* end of reviews styling */
+
+section[id="faq"] .container {
+    display: grid;
+    grid-template-columns: minmax(min-content, 1fr);
+    width: 37.5rem;
+}
+
+.Accordion {
+    border-bottom: 2px solid var(--primary-color);
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.AccordionQuestion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.AccordionAnswer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 300ms cubic-bezier(0.87, 0, 0.13, 1);
+}
+
+.AccordionAnswer p {
+    padding-top: 0.5rem;
+}
+
+.Accordion.active .AccordionAnswer {
+    max-height: 300px;
+}
+
+.Accordion.active .AccordionQuestion .feather-chevron-down {
+    transform: rotate(180deg);
+}
+
+.feather-chevron-down {
+    min-width: 1rem;
+    transition: transform 300ms cubic-bezier(0.87, 0, 0.13, 1);
+}
+
+/* end of faq styling*/
