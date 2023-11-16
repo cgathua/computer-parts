@@ -286,3 +286,103 @@ section[id="faq"] .container {
 }
 
 /* end of faq styling*/
+
+section[class="contact"] {
+    background-color: var(--color-secondary);
+}
+
+section[class="contact"] .container {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(2, minmax(min-content, 1fr));
+    place-items: center;
+}
+
+form[action="contact-form"] {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+fieldset {
+    border: none;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+input,
+textarea,
+select,
+legend {
+    width: 100%;
+    margin: 10px 0 0 0;
+    min-height: 2em;
+}
+
+.inline {
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+}
+
+input,
+textarea {
+    border-bottom: 2px solid var(--secondary-color);
+    color: var(--secondary-color);
+}
+
+input:focus {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+
+textarea:focus {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+textarea:focus-visible {
+    outline: 2px solid var(--secondary-color);
+    border-radius: 3px;
+}
+
+label[class="label4"] input[type="submit"] {
+    display: block;
+    min-width: 60%;
+    height: 2em;
+    font-size: 1rem;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border-color: var(--secondary-color);
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: var(--transition);
+    border: 1px solid var(--primary-color);
+}
+
+section[class="contact"] aside {
+    background-color: transparent;
+    padding: 2rem;
+}
+
+aside h3 {
+    /*font-size: 1.5rem;*/
+    color: var(--color-primary);
+    padding-bottom: 0.5rem;
+}
+
+.AsidePara {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    text-align: center;
+}
+
+section[class="contact"] article {
+    display: flex;
+    gap: 1rem;
+    padding-top: 2rem;
+}
+
+/* end of contact styling */
