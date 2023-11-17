@@ -192,7 +192,7 @@ section[id="products"] .container {
 
 .Chart {
     position: relative;
-    margin: auto;
+    margin: 0 auto;
     height: 60vh;
     width: 60vw;
 }
@@ -425,8 +425,6 @@ h2[class="footer-title"] {
     padding-bottom: 0.625rem;
 }
 
-/* END OF GENERAL FOOTER STYLING */
-
 form {
     display: flex;
     flex-wrap: wrap;
@@ -453,8 +451,6 @@ input[type="submit"] {
     font-weight: 600;
 }
 
-/* END OF SIGN UP AREA STYLING */
-
 section[id="footer-socials"] {
     padding: 0 1.875rem 1.25rem;
 }
@@ -474,7 +470,6 @@ ul[class="footer-icons"] li {
     fill: var(--alternate-color);
 }
 
-/*  END OF SOCIAL MEDIA STYLING */
 
 section[id="footer-legal"] a {
     color: var(--color-secondary);
@@ -501,10 +496,108 @@ ul[class="footer-legal-items"] li {
     flex: 1;
 }
 
-/* END OF LEGAL SECTION STYLING */
-
-section[id="footer-main"] {
-    justify-content: space-around;
+@media only screen and (min-width: 480px) {
+    section[id="footer-main"] {
+        justify-content: space-around;
+    }
 }
 
-/* END OF FOOTER SECTION */
+@media only screen and (min-width: 1024px) {
+    section[id="footer-main"] {
+        justify-content: space-evenly;
+    }
+}
+
+/* end of footer and desktop styling */
+
+@media screen and (max-width: 1024px) {
+    .container {
+        width: var(--desktop-container);
+    }
+
+    #navbar {
+        display: none;
+    }
+
+    #navbar2 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        left: -100%;
+        height: 100vh;
+        width: 16rem;
+        background-color: var(--secondary-color);
+        padding: 1rem;
+        transition: var(--transition);
+    }
+
+    #navbar2 li {
+        padding: 1.5rem;
+        width: 100%;
+    }
+
+    #navbar2 li a {
+        color: var(--primary-color);
+        line-height: 1;
+        font-size: 13px;
+        border-radius: 3px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 25px;
+        padding: 0 5px;
+        outline: none
+    }
+
+    #navbar2 a:hover {
+        background-color: var(--primary-color);
+        color: var(--secondary-color);
+    }
+
+    #navbar2.active {
+        left: 0;
+    }
+
+    #menu-btn {
+        display: inline-block;
+        cursor: pointer;
+        background-color: transparent;
+        margin: 0.5rem auto;
+        margin-right: 1rem;
+    }
+
+    /*end of hamburger menu */
+
+    section[id="home"] .container {
+        grid-template-columns: repeat(2, minmax(min-content, 1fr));
+    }
+
+    .Benefits {
+        grid-template-columns: repeat(2, minmax(min-content, 1fr));
+        gap: 2rem;
+    }
+
+    section[id="products"] .container {
+        grid-template-columns: repeat(2, minmax(min-content, 1fr));
+    }
+
+    .Chart {
+        height: 75%;
+        width: 75%;
+        margin-bottom: 0;
+    }
+
+    section[id="faq"] .container {
+        grid-template-columns: minmax(min-content, 1fr);
+    }
+
+    section[id="contact"] .container {
+        grid-template-columns: repeat(2, minmax(min-content, 1fr));
+        gap: 1rem;
+    }
+}
+
+/* end of media queries for medium screens */

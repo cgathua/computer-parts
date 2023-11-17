@@ -50,7 +50,7 @@ const accordions = document.querySelectorAll('.Accordion');
 
 accordions.forEach((accordion) => {
     accordion.addEventListener('click', () => {
-        if(!accordion.classList.contains('active')){
+        if (!accordion.classList.contains('active')) {
             accordions.forEach(accordion => {
                 accordion.classList.remove('active');
             })
@@ -60,3 +60,24 @@ accordions.forEach((accordion) => {
 });
 
 // end of faq js
+
+const menuBtn = document.querySelector('#menu-btn');
+const navMenu = document.querySelector('#navbar2');
+
+menuBtn.addEventListener('click', () => {
+    menuBtn.classList.toggle("active");
+    navMenu.classList.toggle("active");
+})
+
+document.querySelectorAll('.nav-link').forEach(anchorTag => {
+    anchorTag.addEventListener('click', () => {
+        menuBtn.classList.remove('active');
+        navMenu.classList.remove('active');
+    })
+})
+
+// end of hamburger menu toggle
+
+
+
+
