@@ -23,7 +23,8 @@ new Chart(ctx, {
             y: {
                 beginAtZero: true
             }
-        }
+        },
+        animation: false    
     }
 });
 
