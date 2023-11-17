@@ -193,8 +193,8 @@ section[id="products"] .container {
 .Chart {
     position: relative;
     margin: 0 auto;
-    height: 60vh;
-    width: 60vw;
+    height: 50vh;
+    width: 50vw;
 }
 
 /* end of benchmarks styling */
@@ -582,12 +582,6 @@ ul[class="footer-legal-items"] li {
 
     section[id="products"] .container {
         grid-template-columns: repeat(2, minmax(min-content, 1fr));
-    }
-
-    .Chart {
-        height: 75%;
-        width: 75%;
-        margin-bottom: 0;
     }
 
     section[id="faq"] .container {

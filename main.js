@@ -24,7 +24,8 @@ new Chart(ctx, {
                 beginAtZero: true
             }
         },
-        animation: false    
+        animation: false,
+        maintainAspectRatio: false 
     }
 });
 
@@ -78,6 +79,7 @@ document.querySelectorAll('.nav-link').forEach(anchorTag => {
 })
 
 // end of hamburger menu toggle
+
 
 
 
