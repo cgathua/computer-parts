@@ -601,3 +601,31 @@ ul[class="footer-legal-items"] li {
 }
 
 /* end of media queries for medium screens */
+
+@media screen and (max-width: 600px) {
+    .container {
+        width: var(--mobile-container);
+    }
+
+    section[id="home"] .container {
+        grid-template-columns: minmax(min-content, 1fr);
+    }
+
+    .Benefits {
+        grid-template-columns: minmax(min-content, 1fr);
+    }
+
+    section[id="products"] .container {
+        grid-template-columns: minmax(min-content, 1fr);   
+    }
+
+    section[id="faq"] .container {
+        grid-template-columns: minmax(min-content, 1fr);
+        width: var(--mobile-container);
+    }
+
+    section[id="contact"] .container {
+        grid-template-columns: minmax(min-content, 1fr);   
+    }
+
+}
