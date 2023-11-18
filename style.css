@@ -80,7 +80,7 @@ section h2 {
     text-align: left;
     font-weight: lighter;
     width: var(--desktop-container);
-    margin: 0 auto 4rem;
+    margin: 0 auto 3.5rem;
 }
 
 #navbar2,
@@ -202,7 +202,6 @@ section[id="products"] .container {
 .ReviewsContainer {
     overflow-x: hidden;
     position: relative;
-    margin-bottom: 5rem;
     line-height: 1.1;
 }
 
@@ -610,7 +609,7 @@ ul[class="footer-legal-items"] li {
     }
 
     section[id="products"] .container {
-        grid-template-columns: minmax(min-content, 1fr);   
+        grid-template-columns: minmax(min-content, 1fr);
     }
 
     section[id="faq"] .container {
@@ -619,9 +618,13 @@ ul[class="footer-legal-items"] li {
     }
 
     section[id="contact"] .container {
-        grid-template-columns: minmax(min-content, 1fr);   
+        grid-template-columns: minmax(min-content, 1fr);
+    }
+
+    section {
+        padding: 2.5rem 0;
     }
 
 }
-/* end of mobile media queries */
 
+/* end of mobile media queries */
