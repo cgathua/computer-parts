@@ -185,7 +185,7 @@ section[id="products"] .container {
     font-size: 1rem;
     padding: 0 0.5rem;
     color: var(--primary-color);
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.57));
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
 }
 
 /* end of products styling */
@@ -250,8 +250,15 @@ section[id="faq"] .container {
 
 .Accordion {
     border-bottom: 2px solid var(--primary-color);
-    padding: 0.5rem;
+    padding: 1rem 0;
     cursor: pointer;
+}
+
+.AccordionBtn {
+    background-color: transparent;
+    color: var(--secondary-color);
+    font-weight: bolder;
+    font-size: large;
 }
 
 .AccordionQuestion {
@@ -347,7 +354,7 @@ textarea:focus-visible {
     border-radius: 3px;
 }
 
-label[class="label4"] input[type="submit"] {
+.form input[type="submit"] {
     display: block;
     min-width: 60%;
     height: 2em;
@@ -386,20 +393,20 @@ section[class="contact"] article {
 
 /* end of contact styling */
 
-footer[id="footer"] li {
+footer li {
     list-style: none;
 }
 
-footer[id="footer"] {
+footer {
     background-color: var(--primary-color);
     color: var(--secondary-color);
 }
 
-footer[id="footer"] a {
+footer a {
     color: var(--secondary-color);
 }
 
-footer[id="footer"] a:hover {
+footer a:hover {
     text-decoration: underline;
 }
 
@@ -429,14 +436,14 @@ form {
     flex-wrap: wrap;
 }
 
-label[class="label"] input[type="email"] {
+.label input[type="email"] {
     border: 0;
     padding: 0.625rem;
     background-color: var(--secondary-color);
     margin-top: 0.3125rem;
 }
 
-label[class="label"] input[type="email"]::placeholder {
+.label input[type="email"]::placeholder {
     color: var(--primary-color);
 }
 

@@ -18,7 +18,7 @@
     <!--CHART JS-->
     <script src="https://cdn.jsdelivr.net/npm/chart.js/dist/chart.umd.min.js" defer></script>
     <!--SWIPER JS-->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11.0.5/swiper-bundle.min.js" defer></script>
     <!--LOCAL JS-->
     <script type="module" src="./main.js" defer></script>
     
@@ -28,7 +28,12 @@
     <main>
         <header>
             <a href="#home" class="logo" aria-label="home" alt="computer logo">
-                <svg aria-label="logo" width="36px" height="36px" viewBox="0 0 24 24" fill="none"
+                <svg 
+                    aria-label="logo" 
+                    width="36px" 
+                    height="36px" 
+                    viewBox="0 0 24 24" 
+                    fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                     <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
@@ -41,7 +46,7 @@
                 </svg>
             </a>
             <nav>
-                <ul id="navbar">
+                <ul id="navbar" aria-label="desktop">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#products">Products</a></li>
                     <li><a href="#benchmarks">BenchMarks</a></li>
@@ -50,7 +55,7 @@
                     <li><a href="#contact">Contact</a></li>
                 </ul>
                 <!--END OF DESKTOP NAV-->
-                <ul id="navbar2">
+                <ul id="navbar2" aria-label="mobile">
                     <li><a href="#home" class="nav-link">Home</a></li>
                     <li><a href="#products" class="nav-link">Products</a></li>
                     <li><a href="#benchmarks" class="nav-link">BenchMarks</a></li>
@@ -59,8 +64,17 @@
                     <li><a href="#contact" class="nav-link">Contact</a></li>
                 </ul>
                 <button id="menu-btn" aria-label="menu" aria-haspopup="true" aria-expanded="false">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    <svg 
+                        aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" 
+                        width="24" 
+                        height="24" 
+                        viewBox="0 0 24 24" 
+                        fill="none"
+                        stroke="currentColor" 
+                        stroke-width="2" 
+                        stroke-linecap="round" 
+                        stroke-linejoin="round"
                         class="feather feather-menu">
                         <line x1="3" y1="12" x2="21" y2="12"></line>
                         <line x1="3" y1="6" x2="21" y2="6"></line>
@@ -71,8 +85,8 @@
             </nav>
         </header>
         <!--END OF HEADER-->
-        <section id="home">
-            <figure class="container">
+        <section id="home" aria-label="home">
+            <figure class="container" aria-label="home content">
                 <article class="HomeArticle">
                     <h1>Computer Parts Store</h1>
                     <p>We sell computer parts and accessories, in-store at our Kennesaw Location. The goal is to provide
@@ -84,10 +98,11 @@
                         <a href="#products" aria-label="see products">See Products</a>
                     </button>
                 </article>
+
                 <img 
                     fetchpriority="high" 
                     src="./imgs/pexels-andrey-matveev-1280w.jpg" 
-                    alt="amd cpu"
+                    alt="amd cpus"
                     srcset="imgs/pexels-andrey-matveev-640w.webp 640w, imgs/pexels-andrey-matveev-960w.webp 960w, imgs/pexels-andrey-matveev-1280w.webp 1280w, imgs/pexels-andrey-matveev-1280w.jpg 1280w"
                     width="1280" 
                     height="960"
@@ -95,12 +110,21 @@
             </figure>
         </section>
         <!--END OF HOME SECTION-->
-        <figure class="container Benefits">
+        <figure class="container Benefits" aria-label="benefits content">
             <article class="BenefitsArticle">
                 <figure>
-                    <svg aria-label="truck" xmlns="http://www.w3.org/2000/svg" width="36" height="36"
-                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round" class="feather feather-truck">
+                    <svg 
+                        aria-label="truck icon" 
+                        xmlns="http://www.w3.org/2000/svg" 
+                        width="36" 
+                        height="36"
+                        viewBox="0 0 24 24" 
+                        fill="none" 
+                        stroke="currentColor" 
+                        stroke-width="2" 
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="feather feather-truck">
                         <rect x="1" y="3" width="15" height="13"></rect>
                         <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
                         <circle cx="5.5" cy="18.5" r="2.5"></circle>
@@ -115,9 +139,18 @@
 
             <article class="BenefitsArticle">
                 <figure>
-                    <svg aria-label="box" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round" class="feather feather-package">
+                    <svg 
+                        aria-label="box icon" 
+                        xmlns="http://www.w3.org/2000/svg" 
+                        width="36" 
+                        height="36" 
+                        viewBox="0 0 24 24"
+                        fill="none" 
+                        stroke="currentColor" 
+                        stroke-width="2" 
+                        stroke-linecap="round"
+                        stroke-linejoin="round" 
+                        class="feather feather-package">
                         <line x1="16.5" y1="9.4" x2="7.5" y2="4.21"></line>
                         <path
                             d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z">
@@ -134,7 +167,12 @@
 
             <article class="BenefitsArticle">
                 <figure>
-                    <svg aria-label="money" width="36px" height="36px" viewBox="0 0 24 24" fill="none"
+                    <svg 
+                        aria-label="money icon" 
+                        width="36px" 
+                        height="36px" 
+                        viewBox="0 0 24 24" 
+                        fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                         <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
@@ -155,9 +193,9 @@
             </article>
         </figure>
         <!--END OF BENEFITS ARTICLE-->
-        <section id="products">
+        <section id="products" aria-label="products">
             <h2>Products</h2>
-            <figure class="container">
+            <figure class="container" aria-label="products content">
                 <article class="ProductsArticle">
                     <picture>
                         <source srcset="./imgs/pexels-andrey-matveev-5206323.avif" type="image/avif">
@@ -165,7 +203,7 @@
                             src="./imgs/pexels-andrey-matveev-5206323.jpg" 
                             width="640" 
                             height="427" 
-                            alt="amd cpu"
+                            alt="central processing units"
                             loading="lazy"
                         >
                     </picture>
@@ -179,7 +217,7 @@
                             src="./imgs/pexels-athena-2582932.jpg" 
                             width="640" 
                             height="427" 
-                            alt="motherboard"
+                            alt="black and grey motherboard"
                             loading="lazy"
                         >
                     </picture>
@@ -193,7 +231,7 @@
                             src="./imgs/pexels-format-1029757.jpg" 
                             width="640" 
                             height="427" 
-                            alt="imac" 
+                            alt="imac near macbook" 
                             loading="lazy"
                         >
                     </picture>
@@ -207,7 +245,7 @@
                             src="./imgs/pexels-josh-sorenson-1714205.jpg" 
                             width="640" 
                             height="427" 
-                            alt="keyboard"
+                            alt="apple magic keyboard"
                             loading="lazy"
                         >
                     </picture>
@@ -221,7 +259,7 @@
                             src="./imgs/pexels-andrey-matveev-15860738.jpg" 
                             width="640" 
                             height="427" 
-                            alt="amd cpu"
+                            alt="dual fan cpu cooler"
                             loading="lazy"
                         >
                     </picture>
@@ -235,7 +273,7 @@
                             src="./imgs/pexels-nana-dua-4581902.jpg" 
                             width="640" 
                             height="427" 
-                            alt="nvidia gpus"
+                            alt="nvidia gtx 1080ti"
                             loading="lazy"
                         >
                     </picture>
@@ -244,17 +282,22 @@
             </figure>
             <!--END OF PRODUCTS SECTION-->
         </section>
-        <section id="benchmarks">
+        <section id="benchmarks" aria-label="benchmarks">
             <h2>CPU Gaming BenchMarks</h2>
-            <figure class="container Chart">
-                <canvas id="myChart"></canvas>
+            <figure class="container Chart" aria-label="bar chart">
+                <canvas 
+                    id="myChart" 
+                    aria-label="amd cpu benchmarks in 1080p & 4k from 0 to 200 fps. 7800X3D: 187.3 & 125.1, 7950X3D: 177.6 & 122.8, 7700X: 163.7 & 119.5, 7900X: 160.9 & 118.7, 7700: 160.4 & 117.9, 5800X3D: 146.7 & 117.1" 
+                    role="img"
+                    tabindex="0">
+                </canvas>
             </figure>
         </section>
         <!--END OF BENCHMARKS SECTION-->
 
-        <section id="reviews" class="container ReviewsContainer mySwiper">
+        <section id="reviews" class="container ReviewsContainer mySwiper" aria-label="reviews">
             <h2>Reviews</h2>
-            <figure class="swiper-wrapper">
+            <figure class="swiper-wrapper" aria-labelledby="reviews">
                 <article class="ReviewArticle swiper-slide">
                     <picture class="Image">
                         <source srcset="./imgs/pexels-elman-estrada-10207449.avif" type="image/avif">
@@ -263,7 +306,7 @@
                             src="./imgs/pexels-elman-estrada-10207449.jpg" 
                             width="640" 
                             height="640" 
-                            alt="woman"
+                            alt="woman looking at the camera"
                             class="Avatar"
                             loading="lazy"
                         >
@@ -286,7 +329,7 @@
                             src="./imgs/pexels-iva-prime-5794945.jpg" 
                             width="640" 
                             height="640" 
-                            alt="woman"
+                            alt="woman wearing turtleneck"
                             class="Avatar"
                             loading="lazy"
                         >
@@ -308,7 +351,7 @@
                             src="./imgs/pexels-azia-be-14610789.jpg" 
                             width="640" 
                             height="640" 
-                            alt="woman"
+                            alt="woman posing for photo"
                             class="Avatar"
                             loading="lazy"
                         >
@@ -330,7 +373,7 @@
                             src="./imgs/pexels-abel-kayode-10850706.jpg" 
                             width="640" 
                             height="640" 
-                            alt="woman"
+                            alt="professional potrait of a woman"
                             class="Avatar"
                             loading="lazy"
                         >
@@ -352,7 +395,7 @@
                             src="./imgs/pexels-a-roy-11844361.jpg" 
                             width="640" 
                             height="640" 
-                            alt="woman" 
+                            alt="woman in black spaghetti-strap top" 
                             class="Avatar"
                             loading="lazy"
                         >
@@ -367,101 +410,155 @@
                 </article>
             </figure>
             <!--swiper pagination-->
-            <figure class="swiper-pagination"></figure>
+            <figure class="swiper-pagination" aria-label="slide picker controls"></figure>
         </section>
         <!--END OF REVIEWS SECTION-->
-        <section id="faq">
+        <section id="faq" aria-label="faq">
             <h2>FAQ</h2>
-            <figure class="container">
-                <article class="Accordion">
-                    <figure class="AccordionQuestion">
-                        <h3>What Brands Do You Sell?</h3>
-                        <svg aria-label="chevron down svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" class="feather feather-chevron-down">
+            <figure class="container" aria-label="frequently asked questions">
+                <dl class="Accordion">
+                    <dt class="AccordionQuestion">
+                        <button id="accordion-header-1" aria-controls="accordion-panel-1" class="AccordionBtn" aria-expanded="false">What Brands Do You Sell?</button>
+                        <svg 
+                            aria-hidden="true" 
+                            xmlns="http://www.w3.org/2000/svg" 
+                            min-width="16" 
+                            height="16"
+                            viewBox="0 0 24 24" 
+                            fill="none" 
+                            stroke="currentColor" 
+                            stroke-width="2" 
+                            stroke-linecap="round"
+                            stroke-linejoin="round" 
+                            class="feather feather-chevron-down">
                             <polyline points="6 9 12 15 18 9"></polyline>
                         </svg>
-                    </figure>
-                    <figcaption class="AccordionAnswer">
+                    </dt>
+                    <dd id="accordion-panel-1" class="AccordionAnswer">
                         <p>AMD, Nvidia, Asus, Gigabyte, MSI, Intel, Corsair, EVGA, Sapphire and more.</p>
-                    </figcaption>
-                </article>
+                    </dd>
+                </dl>
 
-                <article class="Accordion">
-                    <figure class="AccordionQuestion">
-                        <h3>Are the listed items in-stock?</h3>
-                        <svg aria-label="chevron down svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" class="feather feather-chevron-down">
+                <dl class="Accordion">
+                    <dt class="AccordionQuestion">
+                        <button id="accordion-header-2" aria-controls="accordion-panel-2" class="AccordionBtn" aria-expanded="false">Are the listed items in-stock?</button>
+                        <svg 
+                            aria-hidden="true" 
+                            xmlns="http://www.w3.org/2000/svg" 
+                            min-width="16" 
+                            height="16"
+                            viewBox="0 0 24 24" 
+                            fill="none" 
+                            stroke="currentColor" 
+                            stroke-width="2" 
+                            stroke-linecap="round"
+                            stroke-linejoin="round" 
+                            class="feather feather-chevron-down">
                             <polyline points="6 9 12 15 18 9"></polyline>
                         </svg>
-                    </figure>
-                    <figcaption class="AccordionAnswer">
+                    </dt>
+                    <dd id="accordion-panel-2" class="AccordionAnswer">
                         <p>Yes, product availability is updated daily.</p>
-                    </figcaption>
-                </article>
+                    </dd>
+                </dl>
 
-                <article class="Accordion">
-                    <figure class="AccordionQuestion">
-                        <h3>What is the return policy?</h3>
-                        <svg aria-label="chevron down svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" class="feather feather-chevron-down">
+                <dl class="Accordion">
+                    <dt class="AccordionQuestion">
+                        <button id="accordion-header-3" aria-controls="accordion-panel-3" class="AccordionBtn" aria-expanded="false">What is the return policy?</button>
+                        <svg 
+                            aria-hidden="true" 
+                            xmlns="http://www.w3.org/2000/svg" 
+                            min-width="16" 
+                            height="16"
+                            viewBox="0 0 24 24" 
+                            fill="none" 
+                            stroke="currentColor" 
+                            stroke-width="2" 
+                            stroke-linecap="round"
+                            stroke-linejoin="round" 
+                            class="feather feather-chevron-down">
                             <polyline points="6 9 12 15 18 9"></polyline>
                         </svg>
-                    </figure>
-                    <figcaption class="AccordionAnswer">
+                    </dt>
+                    <dd id="accordion-panel-3" class="AccordionAnswer">
                         <p>Returns are accepted, within 30 days of purchase.</p>
-                    </figcaption>
-                </article>
+                    </dd>
+                </dl>
 
-                <article class="Accordion">
-                    <figure class="AccordionQuestion">
-                        <h3>What are the store hours?</h3>
-                        <svg aria-label="chevron down svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" class="feather feather-chevron-down">
+                <dl class="Accordion">
+                    <dt class="AccordionQuestion">
+                        <button id="accordion-header-4" aria-controls="accordion-panel-4" class="AccordionBtn" aria-expanded="false">What are the store hours?</button>
+                        <svg 
+                            aria-hidden="true" 
+                            xmlns="http://www.w3.org/2000/svg" 
+                            min-width="16" 
+                            height="16"
+                            viewBox="0 0 24 24" 
+                            fill="none" 
+                            stroke="currentColor" 
+                            stroke-width="2" 
+                            stroke-linecap="round"
+                            stroke-linejoin="round" 
+                            class="feather feather-chevron-down">
                             <polyline points="6 9 12 15 18 9"></polyline>
                         </svg>
-                    </figure>
-                    <figcaption class="AccordionAnswer">
+                    </dt>
+                    <dd id="accordion-panel-4" class="AccordionAnswer">
                         <p>Monday - Saturday 11am - 6pm</p>
-                    </figcaption>
-                </article>
+                    </dd>
+                </dl>
 
-                <article class="Accordion">
-                    <figure class="AccordionQuestion">
-                        <h3>What forms of payments are accepted?</h3>
-                        <svg aria-label="chevron down svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" class="feather feather-chevron-down">
+                <dl class="Accordion">
+                    <dt class="AccordionQuestion">
+                        <button id="accordion-header-5" aria-controls="accordion-panel-5" class="AccordionBtn" aria-expanded="false">What forms of payments are accepted?</button>
+                        <svg 
+                            aria-hidden="true" 
+                            xmlns="http://www.w3.org/2000/svg" 
+                            min-width="16" 
+                            height="16"
+                            viewBox="0 0 24 24" 
+                            fill="none" 
+                            stroke="currentColor" 
+                            stroke-width="2" 
+                            stroke-linecap="round"
+                            stroke-linejoin="round" 
+                            class="feather feather-chevron-down">
                             <polyline points="6 9 12 15 18 9"></polyline>
                         </svg>
-                    </figure>
-                    <figcaption class="AccordionAnswer">
+                    </dt>
+                    <dd id="accordion-panel-5" class="AccordionAnswer">
                         <p>Credit Cards, Apple Pay, Google Pay, Cash, Personal Check.</p>
-                    </figcaption>
-                </article>
+                    </dd>
+                </dl>
 
-                <article class="Accordion">
-                    <figure class="AccordionQuestion">
-                        <h3>How do I reserve an item, on your site?</h3>
-                        <svg aria-label="chevron down svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" class="feather feather-chevron-down">
+                <dl class="Accordion">
+                    <dt class="AccordionQuestion">
+                        <button id="accordion-header-6" aria-controls="accordion-panel-6" class="AccordionBtn" aria-expanded="false">How do I reserve an item, on your site?</button>
+                        <svg 
+                            aria-hidden="true" 
+                            xmlns="http://www.w3.org/2000/svg" 
+                            min-width="16" 
+                            height="16"
+                            viewBox="0 0 24 24" 
+                            fill="none" 
+                            stroke="currentColor" 
+                            stroke-width="2" 
+                            stroke-linecap="round"
+                            stroke-linejoin="round" 
+                            class="feather feather-chevron-down">
                             <polyline points="6 9 12 15 18 9"></polyline>
                         </svg>
-                    </figure>
-                    <figcaption class="AccordionAnswer">
+                    </dt>
+                    <dd id="accordion-panel-6" class="AccordionAnswer">
                         <p>Please fill-out the contact form, with details on your order.</p>
-                    </figcaption>
-                </article>
+                    </dd>
+                </dl>
             </figure>
         </section>
         <!--END OF FAQ SECTION-->
         <section id="contact" class="contact" aria-label="contact">
-            <figure class="container">
-                <form action="contact-form" aria-label="contact-form">
+            <figure class="container" aria-label="contact content">
+                <form action="contact-form" aria-label="contact-form" class="form">
                     <fieldset>
                         <legend>
                             <label 
@@ -482,55 +579,79 @@
                             </label>
                         </legend>
                     </fieldset>
-                    <label 
-                        for="submit" class="label4"><input type="submit" id="submit" value="Send Message"
-                        aria-label="click button">
-                    </label>
+                    <input type="submit" id="submit" value="Send Message" aria-label="click button">
                 </form>
                 <!--END OF FORM SECTION-->
                 <aside aria-label="aside">
                     <h3>Contact Information</h3>
                     <p class="AsidePara">Help Desk</p>
-                    <figure class="info">
-                        <article aria-label="article">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="feather feather-mail">
+                    <figure class="info" aria-label="contact info">
+                        <article aria-label="email">
+                            <svg
+                                aria-label="email icon"
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="24" 
+                                height="24" 
+                                viewBox="0 0 24 24"
+                                fill="none" 
+                                stroke="currentColor" 
+                                stroke-width="2" 
+                                stroke-linecap="round"
+                                stroke-linejoin="round" 
+                                class="feather feather-mail">
                                 <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
                                 </path>
                                 <polyline points="22,6 12,13 2,6"></polyline>
                             </svg>
-                            <figcaption class="details">
+                            <address class="details">
                                 <h4>Email</h4>
                                 <p>info@logo.com</p>
-                            </figcaption>
+                            </address>
                         </article>
-                        <article aria-label="article">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="feather feather-map-pin">
+                        <article aria-label="location">
+                            <svg 
+                                aria-label="location icon"
+                                xmlns="http://www.w3.org/2000/svg" 
+                                width="24" 
+                                height="24" 
+                                viewBox="0 0 24 24"
+                                fill="none" 
+                                stroke="currentColor" 
+                                stroke-width="2" 
+                                stroke-linecap="round"
+                                stroke-linejoin="round" 
+                                class="feather feather-map-pin">
                                 <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
                                 <circle cx="12" cy="10" r="3"></circle>
                             </svg>
-                            <figcaption class="details">
+                            <address class="details">
                                 <h4>Location</h4>
                                 <p>123 Bells Ferry Road</p>
                                 <p>Kennesaw, Georgia 30144</p>
-                            </figcaption>
+                            </address>
                         </article>
-                        <article aria-label="article">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="feather feather-phone">
+                        <article aria-label="telephone">
+                            <svg
+                                aria-label="phone icon"
+                                xmlns="http://www.w3.org/2000/svg" 
+                                width="24" 
+                                height="24" 
+                                viewBox="0 0 24 24"
+                                fill="none" 
+                                stroke="currentColor"
+                                stroke-width="2" 
+                                stroke-linecap="round"
+                                stroke-linejoin="round" 
+                                class="feather feather-phone">
                                 <path
                                     d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
                                 </path>
                             </svg>
-                            <figcaption class="details">
+                            <address class="details">
                                 <h4>Telephone</h4>
                                 <p>Mon-Sat 11am-6pm</p>
                                 <p>(678) 000-0001</p>
-                            </figcaption>
+                            </address>
                         </article>
                     </figure>
                 </aside>
@@ -538,7 +659,7 @@
             <!--END OF ASIDE INFORMATION-->
         </section>
         <!--END OF CONTACT SECTION-->
-        <footer id="footer" aria-label="footer">
+        <footer>
             <section id="footer-main">
                 <article class="footer-column">
                     <h3 class="footer-title">Permalinks</h3>
@@ -555,33 +676,33 @@
                     <h3 class="footer-title">Photo Credit</h3>
                     <ul>
                         
-                        <li><a href="https://www.pexels.com/photo/processors-of-a-computer-5206323/">Andrey Matveev</a></li>
-                        <li><a href="https://www.pexels.com/photo/black-and-gray-motherboard-2582932/">Athena</a></li>
-                        <li><a href="https://www.pexels.com/photo/photo-of-imac-near-macbook-1029757/">Format</a></li>
-                        <li><a href="https://www.pexels.com/photo/apple-magic-keyboard-with-numeric-pad-on-table-near-wireless-mouse-1714205/">Josh Sorenson</a></li>
-                        <li><a href="https://www.pexels.com/photo/dual-fan-cpu-cooler-15860738/">Andrey Matveev</a></li>
-                        <li><a href="https://www.pexels.com/photo/technology-music-sound-speaker-4581902/"> Nana Dua</a></li>
+                        <li><a href="https://www.pexels.com/photo/processors-of-a-computer-5206323/" target="_blank">Andrey Matveev</a></li>
+                        <li><a href="https://www.pexels.com/photo/black-and-gray-motherboard-2582932/" target="_blank">Athena</a></li>
+                        <li><a href="https://www.pexels.com/photo/photo-of-imac-near-macbook-1029757/" target="_blank">Format</a></li>
+                        <li><a href="https://www.pexels.com/photo/apple-magic-keyboard-with-numeric-pad-on-table-near-wireless-mouse-1714205/" target="_blank">Josh Sorenson</a></li>
+                        <li><a href="https://www.pexels.com/photo/dual-fan-cpu-cooler-15860738/" target="_blank">Andrey Matveev</a></li>
+                        <li><a href="https://www.pexels.com/photo/technology-music-sound-speaker-4581902/" target="_blank"> Nana Dua</a></li>
                     </ul>
                 </article>
                 <article class="footer-column">
                     <h3 class="footer-title">Photo Credit II</h3>
                     <ul>
-                        <li><a href="https://www.pexels.com/photo/portrait-of-a-pretty-afro-haired-woman-10850706/">Abel Kayode</a></li>
-                        <li><a href="https://www.pexels.com/photo/a-beautiful-woman-wearing-turtleneck-shirt-5794945/">Iva Prime</a></li>
-                        <li><a href="https://www.pexels.com/photo/woman-face-in-hat-14610789/">Azia Be</a></li>
-                        <li><a href=" https://www.pexels.com/photo/a-beautiful-model-seriously-looking-at-the-camera-10207449/">Elman Estrada</a></li>
-                        <li><a href=" https://www.pexels.com/photo/woman-in-black-spaghetti-strap-top-11844361/">A Roy</a></li>
+                        <li><a href="https://www.pexels.com/photo/portrait-of-a-pretty-afro-haired-woman-10850706/" target="_blank">Abel Kayode</a></li>
+                        <li><a href="https://www.pexels.com/photo/a-beautiful-woman-wearing-turtleneck-shirt-5794945/" target="_blank">Iva Prime</a></li>
+                        <li><a href="https://www.pexels.com/photo/woman-face-in-hat-14610789/" target="_blank">Azia Be</a></li>
+                        <li><a href=" https://www.pexels.com/photo/a-beautiful-model-seriously-looking-at-the-camera-10207449/" target="_blank">Elman Estrada</a></li>
+                        <li><a href=" https://www.pexels.com/photo/woman-in-black-spaghetti-strap-top-11844361/" target="_blank">A Roy</a></li>
                     </ul>
                 </article>
                 <article class="footer-column">
                     <h3 class="footer-title">Stay Informed</h3>
                     <p>Subscribe to our mailing list.</p>
-                    <form action="newsletter" aria-label="signup">
-                        <label for="signup-email" class="label"><input id="signup-email" type="email"
+                    <form action="newsletter" aria-label="signup" class="signup">
+                        <label for="signup-email" class="label" aria-labelledby="signup-email"><input id="signup-email" type="email"
                             placeholder="Enter your email" required="valid email" aria-label="placeholder text"
                             autocomplete="email">
                         </label>
-                        <label for="submit-label"><input type="submit" id="submit-label" value="Subscribe"
+                        <label for="submit" aria-labelledby="submit-btn"><input type="submit" id="submit-btn" value="Subscribe"
                             aria-label="submit button">
                         </label>
                     </form>
@@ -590,48 +711,93 @@
             <!--END OF FOOTER MAIN SECTION-->
             <section id="footer-socials" aria-label="social media">
                 <ul class="footer-icons">
-                    <li><a href="#" aria-label="facebook">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="feather feather-facebook">
+                    <li><a href="https://www.facebook.com" aria-label="facebook">
+                            <svg 
+                                aria-label="facebook icon"
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16" 
+                                height="16"
+                                viewBox="0 0 24 24" 
+                                fill="none" 
+                                stroke="currentColor" 
+                                stroke-width="2" 
+                                stroke-linecap="round"
+                                stroke-linejoin="round" 
+                                class="feather feather-facebook">
                                 <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
                             </svg>
                         </a>
                     </li>
-                    <li><a href="#" aria-label="twitter">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="feather feather-twitter">
+                    <li><a href="https://twitter.com/" aria-label="twitter">
+                            <svg 
+                                aria-label="twitter icon"
+                                xmlns="http://www.w3.org/2000/svg" 
+                                width="16" 
+                                height="16"
+                                viewBox="0 0 24 24" 
+                                fill="none" 
+                                stroke="currentColor" 
+                                stroke-width="2" 
+                                stroke-linecap="round"
+                                stroke-linejoin="round" 
+                                class="feather feather-twitter">
                                 <path
                                     d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z">
                                 </path>
                             </svg>
                         </a>
                     </li>
-                    <li><a href="#" aria-label="instagram">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16"
-                                height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram">
+                    <li><a href="https://www.instagram.com/" aria-label="instagram">
+                            <svg
+                                aria-label="instagram icon"
+                                xmlns="http://www.w3.org/2000/svg" 
+                                width="16"
+                                height="16" 
+                                viewBox="0 0 24 24" 
+                                fill="none" 
+                                stroke="currentColor" 
+                                stroke-width="2"
+                                stroke-linecap="round" 
+                                stroke-linejoin="round" 
+                                class="feather feather-instagram">
                                 <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
                                 <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
                                 <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
                             </svg>
                         </a>
                     </li>
-                    <li><a href="#" aria-label="github">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="feather feather-github">
+                    <li><a href="https://github.com" aria-label="github">
+                            <svg 
+                                aria-label="github icon"
+                                xmlns="http://www.w3.org/2000/svg" 
+                                width="16" 
+                                height="16"
+                                viewBox="0 0 24 24" 
+                                fill="none" 
+                                stroke="currentColor" 
+                                stroke-width="2" 
+                                stroke-linecap="round"
+                                stroke-linejoin="round" 
+                                class="feather feather-github">
                                 <path
                                     d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
                                 </path>
                             </svg>
                         </a>
                     </li>
-                    <li><a href="#" aria-label="linkedin">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="feather feather-linkedin">
+                    <li><a href="https://www.linkedin.com" aria-label="linkedin">
+                            <svg
+                                aria-label="linkedin "
+                                xmlns="http://www.w3.org/2000/svg" 
+                                width="16" 
+                                height="16"
+                                viewBox="0 0 24 24" 
+                                fill="none" 
+                                stroke="currentColor" 
+                                stroke-width="2" 
+                                stroke-linecap="round"
+                                stroke-linejoin="round" 
+                                class="feather feather-linkedin">
                                 <path
                                     d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
                                 </path>
@@ -640,10 +806,19 @@
                             </svg>
                         </a>
                     </li>
-                    <li><a href="#" aria-label="youtube">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="feather feather-youtube">
+                    <li><a href="https://www.youtube.com" aria-label="youtube">
+                            <svg 
+                                aria-label="youtube icon"
+                                xmlns="http://www.w3.org/2000/svg" 
+                                width="16" 
+                                height="16"
+                                viewBox="0 0 24 24" 
+                                fill="none" 
+                                stroke="currentColor" 
+                                stroke-width="2" 
+                                stroke-linecap="round"
+                                stroke-linejoin="round" 
+                                class="feather feather-youtube">
                                 <path
                                     d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z">
                                 </path>
@@ -657,8 +832,8 @@
             <section id="footer-legal" aria-label="legal">
                 <small>
                     <ul class="footer-legal-items">
-                        <li><a href="#">Terms &amp; Conditions</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#" aria-label="see terms & conditions">Terms &amp; Conditions</a></li>
+                        <li><a href="#" aria-label="see privacy policy">Privacy Policy</a></li>
                         <li>Made by <a href="https://cgathua.pages.dev/" target="_blank">@cgathua</a></li>
                     </ul>
                 </small>

@@ -10,7 +10,7 @@ document.querySelectorAll('.nav-link').forEach(anchorTag => {
     anchorTag.addEventListener('click', () => {
         menuBtn.classList.remove('active');
         navMenu.classList.remove('active');
-    });
-});
+    })
+})
 
 export { menuBtn, navMenu };
