@@ -117,7 +117,6 @@ header {
     z-index: 9;
     width: 100%;
     background-color: var(--primary-color);
-    padding: 5px 15px; 
 }
 
 #navbar {
@@ -609,10 +608,7 @@ ul[class="footer-legal-items"] li {
         width: var(--mobile-container);
     }
 
-    .logo {
-        margin: initial;
-    }
-
+    
     section h1, h2 {
         padding-top: 2rem;
     }
