@@ -5,7 +5,7 @@
     --alternate-color: #8C7668;
     --desktop-container: 86%;
     --mobile-container: 90%;
-    --transition: all 0.3s linear;
+    --transition: all 0.3s ease;
 }
 
 html {
@@ -538,7 +538,7 @@ ul[class="footer-legal-items"] li {
         width: 16rem;
         background-color: var(--secondary-color);
         padding: 1rem;
-        transition: var(--transition);
+        transition: all 0.3s ease-out;
     }
 
     #navbar2 li {
