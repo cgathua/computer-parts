@@ -265,7 +265,7 @@ section[id="faq"] .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-   
+
 }
 
 
@@ -608,8 +608,9 @@ ul[class="footer-legal-items"] li {
         width: var(--mobile-container);
     }
 
-    
-    section h1, h2 {
+
+    section h1,
+    h2 {
         padding-top: 2rem;
     }
 
@@ -641,3 +642,9 @@ ul[class="footer-legal-items"] li {
 }
 
 /* end of mobile media queries */
+
+@media (prefers-reduced-motion: reduce) {
+    .btn {
+        transition: none;
+    }
+}
